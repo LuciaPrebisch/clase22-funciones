@@ -23,7 +23,7 @@ function NumeroPar(numero) {
         return " es impar"
     }
 }
-*/
+
 
 // Definir una función que muestre información sobre una cadena de texto que se le pasa como argumento. 
 // A partir de la cadena que se le pasa, la función determina si esa cadena está formada sólo por mayúsculas, sólo por minúsculas o por una mezcla de ambas.
@@ -43,8 +43,19 @@ function informacion (cadena) {
     }
 
     console.log ("el texto ingresado esta escrito en " + informacion (cadena)) // es importante la funcion + variable
+*/
+
+// Solicitar por pantalla al usuario ingresar el valor de los lados de un rectángulo, luego crear una función para calcular su perímetro y mostrarlo por pantalla.
+
+// La fórmula del perímetro  es p = 2*(a +b)
 
 
+let lado1 = parseFloat (prompt ("Ingrese lado en cm"))
+let lado2 = parseFloat (prompt ("Ingrese lado 2 en cm"))
 
+function perimetro (lado1, lado2) {
+    return 2 * (lado1 + lado2)
+}
 
+console.log ( "el perimetro del rectangulo es " + perimetro(lado1, lado2) + "cm") // recordar funcion+variable
 
